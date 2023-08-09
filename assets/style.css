@@ -10,14 +10,15 @@ body {
 .mainBox {
     background-color: #ffffff;
     width: 200px;
-    /* height: 100px; */
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .mainBox img {
-    width: 80%;
+    width: 100%;
     display: block;
     margin: 0 auto; /* This will horizontally center the image within the .mainBox */
+    padding: 10px;
 }
