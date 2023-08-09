@@ -1,8 +1,9 @@
 body {
     background-color: hsl(212, 45%, 89%);
     display: flex;
-    justify-content: center;
+    flex-direction: column; /* Stack elements vertically */
     align-items: center;
+    justify-content: space-between; /* Distribute space between elements */
     height: 100vh;
     margin: 0;
 }
@@ -12,16 +13,18 @@ body {
     width: 290px;
     height: auto;
     display: flex;
-    flex-direction: column; /* Change to column to stack elements vertically */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
+    margin-top: auto; /* Push mainBox to the center of the screen */
+    margin-bottom: auto; /* Push mainBox to the center of the screen */
 }
 
 .mainImage {
     display: flex;
-    flex-direction: column; /* Stack image and text vertically */
-    align-items: center; /* Center content horizontally */
+    flex-direction: column;
+    align-items: center;
     padding: 10px;
 }
 
@@ -33,8 +36,8 @@ body {
 }
 
 .mainText {
-    margin-top: auto; /* Push mainText to the bottom */
-    padding: 0 5px 10px 5px;  /* top right bottom left */
+    margin-top: auto;
+    padding: 0 5px 15px 5px;
     font-family: 'Outfit', sans-serif;
     font-size: 22px;
     font-weight: 400;
@@ -42,10 +45,18 @@ body {
 }
 
 .subText {
-    margin-top: auto; /* Push mainText to the bottom */
-    padding: 0 15px 15px 15px;  /* top right bottom left */
+    margin-top: auto;
+    padding: 0 15px 20px 15px;
     font-family: 'Outfit', sans-serif;
     font-size: 15px;
     font-weight: 200;
     text-align: center;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
 }
