@@ -7,3 +7,7 @@ body {
     width: 100px;
     height: 100px;
 }
+
+.mainBox img {
+    width: 20%;
+}
