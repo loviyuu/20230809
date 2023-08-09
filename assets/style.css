@@ -8,17 +8,44 @@ body {
 }
 
 .mainBox {
-    background-color: #ffffff;
-    width: 200px;
+    background-color: hsl(0, 0%, 100%);
+    width: 290px;
     height: auto;
     display: flex;
+    flex-direction: column; /* Change to column to stack elements vertically */
     justify-content: center;
     align-items: center;
+    border-radius: 10px;
 }
 
-.mainBox img {
-    width: 100%;
-    display: block;
-    margin: 0 auto; /* This will horizontally center the image within the .mainBox */
+.mainImage {
+    display: flex;
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center; /* Center content horizontally */
     padding: 10px;
+}
+
+.mainImage img {
+    width: 97%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.mainText {
+    margin-top: auto; /* Push mainText to the bottom */
+    padding: 0 5px 10px 5px;  /* top right bottom left */
+    font-family: 'Outfit', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.subText {
+    margin-top: auto; /* Push mainText to the bottom */
+    padding: 0 15px 15px 15px;  /* top right bottom left */
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+    text-align: center;
 }
