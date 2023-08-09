@@ -1,7 +1,8 @@
 body {
     background-color: hsl(212, 45%, 89%);
-    display: grid;
-    place-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
     margin: 0;
 }
@@ -10,8 +11,13 @@ body {
     background-color: #ffffff;
     width: 100px;
     height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .mainBox img {
     width: 80%;
+    display: block;
+    margin: 0 auto; /* This will horizontally center the image within the .mainBox */
 }
